@@ -97,7 +97,23 @@ a:hover {
 
 p {
 	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+    line-height: 22px;
 }
+
+.stroke {
+  margin: 0;
+  font: 400 4.5em/1 'Playfair Display', serif;
+}
+.stroke svg {
+  display: block;
+}
+.stroke text {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 4;
+}
+
 
 .hidden {
 	position: absolute;
@@ -326,7 +342,7 @@ a.demo--current {
 	padding: 20vh 0;
 	max-width: 1000px;
 	display: grid;
-	grid-row-gap: 20vh;
+	grid-row-gap: 40vh;
 	grid-template-columns: repeat(2, 1fr);
 }
 
@@ -350,6 +366,7 @@ a.demo--current {
 .grid__item-description {
 	margin: 0;
 	font-size: 1.5rem;
+	line-height: 29px;
 }
 
 .grid__item:nth-child(odd) {
@@ -361,7 +378,7 @@ a.demo--current {
 }
 
 .grid__item:nth-child(even) {
-	margin: 70vh 0 0 0;
+	margin:100vh 0 0 0;
 }
 
 .grid__item:nth-child(even) .grid__item-titlewrap {
@@ -371,7 +388,7 @@ a.demo--current {
 .scroll-img {
 	width: 500px;
 	max-width: 100%;
-	height: 50vh;
+	height: 60vh;
 	min-width: 250px;
 	min-height: 250px;
 	background-size: cover;
@@ -434,6 +451,10 @@ a.demo--current {
 	.grid__item {
 		margin: 0 0 8rem !important;
 	}
+
+	.grid__item-title {
+		font-size: 14vw
+	}
 	.scroll-img {
 		margin: 0 auto;
 	}
@@ -443,7 +464,8 @@ a.demo--current {
 		text-align: center;
 		left: 0 !important;
 		right: 0 !important;
-		width: 100%;
 		display: block;
+		width: 90%;
+	    margin: 0 auto;
 	}
 }

@@ -58,6 +58,11 @@
  padding-top: 100px;
 }
 
+#animationWindow svg {
+	position: relative;
+    bottom: 90px;
+}
+
 .thought {
 	position: absolute;
 	bottom: 50%;
@@ -70,7 +75,7 @@
 }
 
 .thought.right.work {
-    bottom: 20%;
+    bottom: 0%;
 }
 
 .thought.right.future {
@@ -82,9 +87,24 @@
 }
 
 .thought.left.me {
-	bottom: 10%;
+	bottom: 0%;
 }
 
 .thought.left.hulu {
 	bottom: 30%;
+}
+
+@media screen and (max-width: 55em) {
+	.thought {
+		position: relative;
+		bottom: auto;
+		width: 80%;
+		margin:  0 auto;
+	}
+
+	.thought.left, .thought.right, .thought.left.hulu, .thought.right.future, .thought.right.work, .thought.left.me {
+		left: auto;
+		right:  auto;
+		bottom: auto;
+	}
 }
